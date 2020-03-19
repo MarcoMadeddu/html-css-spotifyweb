@@ -220,6 +220,73 @@ body {
 
 /* BOTTOM PLAYER */
 #player {
-    height: 80px; /*debug*/
-    background: #333;
+    background: #272727;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* player-left */
+.player-left{
+  display: flex;
+  align-items: center;
+}
+
+.player-left img{
+  width: 60px;
+}
+
+.player-left-text{
+  padding-left: 10px;
+}
+
+.player-left-command{
+  padding-left: 40px;
+}
+
+/* player-central */
+.player-central-top{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.player-central-top i{
+  padding: 0 10px;
+}
+.big{
+  font-size: 30px;
+}
+.player-central-bottom{
+  display: flex;
+  align-items: center;
+}
+
+.player-central-bottom .volume{
+  width: 300px;
+  border-bottom: 2px solid lightgrey;
+  margin: 0 10px;
+}
+
+/* player-right */
+.player-right{
+  display: flex;
+  align-items: center;
+}
+
+.player-right i{
+  margin: 0 10px 0 0;
+}
+
+.player-right-command{
+  margin-right: 10px;
+}
+
+.player-right-volume{
+  display: flex;
+  align-items: center;
+}
+
+.player-right-volume .volume{
+  margin-left: 5px;
+  width: 100px;
+  border-bottom: 2px solid lightgrey;
 }
