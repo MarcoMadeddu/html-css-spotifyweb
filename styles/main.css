@@ -23,8 +23,8 @@ body {
   padding-top: 20px;
 }
 
-.txt-white{
-  color: white;
+.txt-grey{
+  color: grey;
 }
 
 /* LAYOUT */
@@ -205,6 +205,16 @@ body {
 
 .content-category .album img{
   max-width: 100%;
+}
+
+.content-category .album h4{
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.radius img{
+  border: 2px transparent;
+  border-radius: 50%;
 }
 
 
