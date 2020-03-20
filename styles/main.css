@@ -302,7 +302,7 @@ body {
   content: "";
   position: absolute;
   width: 40px;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid lightgreen;
 }
 
 /* player-right */
@@ -327,7 +327,14 @@ body {
 .player-right-volume .volume{
   margin-left: 5px;
   width: 100px;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid grey;
+}
+
+.player-right-volume .volume:after{
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid lightgreen;
 }
 
 /* responsive */
@@ -351,6 +358,7 @@ body {
 
 
 .user-action h4,
+.user-action a,
 .sidebar-bottom h3,
 .sidebar-bottom a{
   display: none;
@@ -383,8 +391,20 @@ body {
 
 .player-right-volume .volume{
   margin-left: 5px;
-  width: 25px;
+  width: 40px;
   border-bottom: 2px solid lightgrey;
+}
+
+.player-left-text{
+  padding-left: 5px;
+}
+
+.player-left-command{
+  padding-left: 5px;
+}
+
+.player-central-top i{
+  padding: 0 5px;
 }
 
 }
