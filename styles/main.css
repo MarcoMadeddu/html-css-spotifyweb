@@ -34,13 +34,11 @@ body {
     height: 100vh;
 }
 
-
 /* MAIN WINDOW */
 #main-window {
     flex-grow: 1;
     display: flex;
 }
-
 
 /* SIDEBAR */
 #sidebar {
@@ -56,7 +54,6 @@ body {
 #sidebar a:hover{
   color:white;
 }
-
 
 /* Sidebar top */
 
@@ -161,7 +158,6 @@ body {
   display: none;
 }
 
-
 /* CONTENT */
 
 #content {
@@ -173,16 +169,16 @@ body {
 /* Topbar */
 
 .content-top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    background: #080b11;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #080b11;
+  z-index: 1;
 }
 
 .content-top-bar a{
@@ -198,14 +194,14 @@ body {
 }
 
 #content .scrollable {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    /* 90px = height di content-top-bar */
-    padding: 90px 15px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* 90px = height di content-top-bar */
+  padding: 90px 15px 30px;
 }
 
 /* Content-menu */
@@ -263,8 +259,8 @@ body {
   border-radius: 50%;
 }
 
-
 /* BOTTOM PLAYER */
+
 #player {
     background: #272727;
     padding: 10px;
@@ -352,46 +348,18 @@ body {
   border-bottom: 2px solid lightgreen;
 }
 
-/* responsive */
+/* RESPONSIVE */
 
-/* responsive 1024 */
+/* responsive 768 */
 @media screen and (min-width: 768px){
+
   .content-category .album-container .album{
     flex-basis: calc(100% / 3);
   }
 
-  .player-central-bottom .volume{
-
-    width: 300px;
-  }
-}
-
-/* responsive 992 */
-
-@media screen and (min-width: 992px){
-
   /* SIDEBAR */
   #sidebar {
-      flex-basis: 230px; /* larghezza sidebar */
-      display: flex;
-      flex-direction: column;
-  }
-
-  #sidebar li:hover{
-    border-left: 1px solid lightgreen;
-  }
-
-  #sidebar a:hover{
-    color:white;
-  }
-
-
-  /* Sidebar top */
-
-  #main-window .sidebar-top {
-      flex-grow: 1;
-      background: black;
-      padding-left: 10px;
+      flex-basis: 230px;
   }
 
   #main-window .sidebar-top .logo img{
@@ -411,82 +379,78 @@ body {
     display: inline-block;
   }
 
-  .user-action .list{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-  }
-
-  .user-action .list img{
-    width: 25px;
-    vertical-align: middle;
-  }
-
-  .list li{
-    padding-bottom: 10px;
-    list-style: none;
-  }
   .user-action .list a{
-   color: grey;
-   font-size: 12px;
-   text-decoration: none;
    display: inline-block;
   }
    .list a{
     display: block;
-    color: grey;
-    font-size: 12px;
-    text-decoration: none;
   }
 
    .list i{
      display: block;
-    font-size: 50px;
-    vertical-align: middle;
-    margin-right: 5px;
   }
 
   /* sidebar-bottom */
 
-  .sidebar-bottom {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    font-size: 12px;
+  .sidebar-bottom a{
+    display: block;
   }
+
+  .sidebar-bottom h3{
+    display: block;
+  }
+
+  .player-central-bottom .volume{
+    width: 300px;
+  }
+}
+
+/* responsive 992 */
+
+@media screen and (min-width: 992px){
+
+  /* SIDEBAR */
+  #sidebar {
+      flex-basis: 230px;
+  }
+
+  #main-window .sidebar-top .logo img{
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #main-window .sidebar-top .logo-small img{
+    display: none;
+  }
+
+  /* user action */
+
+  .playlist{
+    display: inline-block;
+  }
+
+  .user-action .list a{
+   display: inline-block;
+  }
+   .list a{
+    display: block;
+  }
+
+   .list i{
+     display: block;
+  }
+
+  /* sidebar-bottom */
 
   .sidebar-bottom a{
-    text-decoration: none;
-    color: grey;
-    padding-bottom: 10px;
-    border-bottom: 1px solid;
-    max-width: 170px;
-    width: 100%;
-    margin-bottom: 10px;
+    display: block;
   }
 
-  .sidebar-bottom i{
-    margin-right: 10px;
+  .sidebar-bottom h3{
+    display: block;
   }
-
-
-  .sidebar-bottom .profile{
-    display: flex;
-    align-items: center;
-    padding-bottom: 5px;
-  }
-
-  .sidebar-bottom img{
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-    border: 4px transparent;
-    border-radius: 50%;
-    background-color: grey;
-    vertical-align: middle;
-  }
-
 
   /* content */
 
